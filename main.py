@@ -22,3 +22,15 @@ class Deck:
     
     def deal(self):
         return self.cards.pop()
+    
+class Player:
+    
+    def __init__(self, name):
+        self.name = name
+        self.hand = []
+    
+    def draw(self, deck):
+        self.hand.append(deck.deal())
+    
+    def show_hand(self):
+        print("{}'s hand: {}".format(self.name, self.hand))
