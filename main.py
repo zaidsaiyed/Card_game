@@ -34,3 +34,18 @@ class Player:
     
     def show_hand(self):
         print("{}'s hand: {}".format(self.name, self.hand))
+
+class game:
+    def __init__(self):
+        self.deck = Deck()
+        self.deck.shuffle()
+        self.player = Player("Player")
+        self.dealer = Player("Dealer")
+    
+    def play(self):
+        self.player.draw(self.deck)
+        self.dealer.draw(self.deck)
+        self.player.draw(self.deck)
+        self.dealer.draw(self.deck)
+        self.player.show_hand()
+        self.dealer.show_hand()
