@@ -49,3 +49,11 @@ class game:
         self.dealer.draw(self.deck)
         self.player.show_hand()
         self.dealer.show_hand()
+    
+game = game()
+
+while True:
+    game.play()
+    play_again = input("Play again? (y/n): ")
+    if play_again == 'n':
+        break
