@@ -1,5 +1,7 @@
 import random
 
+# this game is object oriented
+
 class Card:
     def __init__(self, suit, value):
         self.suit = suit
