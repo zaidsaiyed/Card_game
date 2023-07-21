@@ -16,7 +16,7 @@ class Deck:
         for suit in ['Hearts', 'Diamonds', 'Clubs', 'Spades']:
             for value in range(2, 11):
                 self.cards.append(Card(suit, str(value)))
-            for value in ['J', 'Q', 'K', 'A']:
+            for value in ['Jack', 'Queen', 'King', 'Ace']:
                 self.cards.append(Card(suit, value))
                 
     def shuffle(self):
